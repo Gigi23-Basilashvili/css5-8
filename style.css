@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0px;
+}
+body {
+    background: #141414;
+}
+.container{
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+.company span{
+    color: #989898;
+    font-size: 14px;
+}
+.sideSection {
+    display: flex;
+    width: 224px;
+    height: 1715px;
+    padding: 16px 16px 1201px 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    border-right: 1px solid #434343;
+    background: #222224;
+}
+.sideLogo:hover{
+    opacity: 50%;
+    cursor: pointer;
+}
+.sideCompany {
+    padding-top: 32px;
+    display: flex;
+    width: 192px;
+    padding-bottom: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #434343;
+}
+/*  */
+.LiBttnOn{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 16px;
+    border-radius: 12px;
+    background: #FAE101;
+    width: 100%;
+    cursor: pointer;
+}
+.LiBttnOn:hover{
+    opacity: 50%;
+}
+.LiBttn{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 16px;
+    color: white;
+    cursor: pointer;
+}
+.LiBttn:hover{
+    opacity: 50%;
+}
+/*  */
+.sideAcc{
+    padding-top: 32px;
+    display: flex;
+    width: 192px;
+    padding-bottom: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    border-bottom: 1px solid #434343;
+}
+.sideAcc span:nth-child(1)  {
+    color: #989898;
+    font-size: 14px;
+    padding-bottom: 16px;
+}
+/*  */
