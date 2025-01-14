@@ -5,9 +5,16 @@
 }
 body {
     background: #141414;
+    overflow-x: hidden;
+
 }
 .container{
     max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+.min-container{
+    max-width: 1216px;
     width: 100%;
     margin: 0 auto;
 }
@@ -15,7 +22,15 @@ body {
     color: #989898;
     font-size: 14px;
 }
-.sideSection {
+.allGrid {
+     display: grid;
+    grid-template-columns: auto 1fr; /* Sidebar takes its intrinsic size, and the content takes the rest */
+    grid-template-rows: 1fr; /* Single row */
+    grid-column-gap: 0px; /* Optional: Adjust spacing between columns */
+    grid-row-gap: 0px; /* Optional: Adjust spacing between rows */
+    height: 100vh;
+}
+.sideSelect {
     display: flex;
     width: 224px;
     height: 1715px;
@@ -25,6 +40,7 @@ body {
     gap: 32px;
     border-right: 1px solid #434343;
     background: #222224;
+    
 }
 .sideLogo:hover{
     opacity: 50%;
@@ -83,3 +99,265 @@ body {
     padding-bottom: 16px;
 }
 /*  */
+
+.navBar{
+    border-bottom: 1px solid #434343;
+    padding-top: 16px;
+    /* padding-left: 366px; */
+    padding-bottom: 16px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 208px;
+    padding-right: 30px;
+}
+.navInput {
+    display: flex;
+    align-items: center;
+}
+.navInput input{
+    min-width: 416px;
+    width: 100%;
+    color: #FAE101;
+    padding: 13px 12px;
+    background-color: transparent;
+    border-radius: 8px 0px 0px 8px;
+    border-top: 1px solid #FAE101;
+    border-bottom: 1px solid #FAE101;
+    border-left: 1px solid #FAE101;
+    outline: none;
+}
+.navInput input::placeholder {
+    color: #FAE101;
+}
+.navInput button {
+    border-left: 1px solid #FAE101;
+    border-radius: 0px 8px 8px 0px;
+    background: #FAE101;
+    padding: 8px 12px;
+}
+.navAcc{
+    display: flex;
+    color: white;
+    gap: 10px;
+    align-items: center;
+}
+/*  */
+.rightContent {
+    margin-top: 32px;
+    padding-left: 64px;
+    padding-right: 64px;
+}
+.grinchBox{
+    display: inline-flex;
+    padding: 19px 170px 19px 40px;
+    align-items: center;
+    gap: 229px;
+    border-radius: 16px;
+    background: #222224;
+}
+.grinchLeftText{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+.grinchLeftText h2 {
+    color: #FAE101;
+    font-size: 48px;
+}
+.grinchLeftText h3 {
+    max-width: 247px;
+    width: 100%;
+    color: #FFF;
+    font-size: 40px;
+}
+.grinchLeftText span {
+    max-width: 314px;
+    width: 100%;
+    color: #B7B7B7;
+    font-size: 16px;
+}
+/*  */
+.underGrinchBox{
+    padding-top: 32px;
+}
+.underGrinchParent{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 12px;
+}
+.underGrinchChild {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 16px 8px 12px;
+    border-radius: 24px;
+    background: #222224;
+    color: #fff;
+    cursor: pointer;
+}
+.underGrinchChild:hover{
+    background-color: #FAE101;
+    color: black;
+}
+/*  */
+.flashSalesBox{
+    padding-top: 64px;
+}
+.flashSalesHeader span {
+    color: white;
+    font-size: 16px;
+}
+
+.flashSalesCountdown{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.countdownText {
+    color: #797979;
+}
+.active {
+    padding-right: 16px;
+    color: #FAE101;
+}
+.countdownTimer {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.dots {
+    color: #D9D9D9;
+    font-weight: 600;
+}
+.countdownBox{
+    border-radius: 4px;
+    background: #FAE101;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    color: #000;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+}
+/*  */
+.flashSalesItemsBox{
+    padding-top: 16px;
+}
+.flashSalesIntro {
+    display: flex;
+    align-items: center;
+}
+.flashSalesIntroParent{
+    display: flex;
+    align-self: center;
+    gap: 16px;
+}
+.flashSalesIntroChild{
+    display: flex;
+    align-items: start;
+    gap: 12px;
+    padding: 16px;
+    border-radius: 12px;
+    border: 1px solid #FAE101;
+    background: #222224;
+}
+.flashSalesIntroChildText{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    align-self: stretch;
+    max-width: 154px;
+    width: 100%;
+}
+.flashSalesIntroChildText h4 {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+}
+.test {
+    color: #797979;
+    font-size: 14px;
+}
+.price{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.firstPrice {
+    color: #FAE101;
+}
+.secondPrice {
+    color: #797979;
+}
+.flashSalesIntroChildText .addToCart {
+    margin-top: auto;
+    border-radius: 4px;
+    background: #FAE101;
+    height: 40px;
+    padding: 10px;
+    align-self: stretch;
+    text-align: center;
+    cursor: pointer;
+}
+.addToCart span {
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+}
+.addToCart:hover{
+    opacity: 50%;
+}
+/*  */
+.flashSalesList {
+    padding-top: 32px;
+}
+.flashSalesListHeader span {
+    color: #fff;
+}
+.flashSalesListParent {
+    display: flex;
+    align-self: center;
+    gap: 24px;
+    padding-top: 16px;
+}
+.flashSalesListChild {
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    flex: 1 0 0;
+    align-self: stretch;
+    border-radius: 12px;
+    border: 1px solid #FAE101;
+}
+.flashSalesListChild img {
+    padding-top: 12px;
+}
+.flashSalesListChildCollumn{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    align-self: stretch;
+}
+.flashSalesListChildCollumn span{
+    color: #fff;
+}
+.flashSalesListChildCollumn p{
+    color: #797979;
+    font-size: 14px;
+    font-weight: 400;
+}
+/*  */
+.flashSalesListHeaderPotter{
+    color: #fff;
+    padding-top: 32px;
+}
